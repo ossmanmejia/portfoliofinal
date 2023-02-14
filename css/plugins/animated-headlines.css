@@ -75,6 +75,12 @@ a {
   font-size: 3rem;
   line-height: 1.2;
 }
+@media only screen and (min-width: 532px) {
+  .cd-headline {
+    font-size: 3.4rem;
+    font-weight: 300;
+  }
+}
 @media only screen and (min-width: 768px) {
   .cd-headline {
     font-size: 4.4rem;
