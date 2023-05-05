@@ -21,7 +21,8 @@ Table of contents
 
 body {
     font-family: 'Muli', sans-serif;
-    height: 5000px;
+    /* height: 5000px; */
+    min-height: 100vh;
 }
 
 /* ==========================
