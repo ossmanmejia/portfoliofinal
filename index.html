@@ -855,40 +855,35 @@
                 <div class="block-title">
                   <h3>Formulario de contacto</h3>
                 </div>
-                <form id="contact-form" method="POST" action="https://formspree.io/f/xrgvpdla">
+                <form id="contact-form" action="https://formspree.io/f/xrgvpdla" method="POST">
                   <div class="controls">
                     <div class="form-group">
-                      <input id="form_name" type="text" name="name" class="form-control"
-                        placeholder="Tu nombre completo" required="required" data-error="Por favor, ingresa tu nombre.">
+                      <input type="text" name="name" class="form-control" placeholder="Tu nombre completo" required>
                       <div class="form-control-border"></div>
                       <i class="form-control-icon fa fa-user"></i>
-                      <div class="help-block with-errors"></div>
                     </div>
 
                     <div class="form-group">
-                      <input id="form_email" type="email" name="email" class="form-control"
-                        placeholder="Tu correo electrónico" required="required"
-                        data-error="Por favor, ingresa un correo válido.">
+                      <input type="email" name="_replyto" class="form-control" placeholder="Tu correo electrónico"
+                        required>
                       <div class="form-control-border"></div>
                       <i class="form-control-icon fa fa-envelope"></i>
-                      <div class="help-block with-errors"></div>
                     </div>
 
                     <div class="form-group">
-                      <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Asunto"
-                        required="required" data-error="Por favor, indica el asunto.">
+                      <input type="text" name="subject" class="form-control" placeholder="Asunto" required>
                       <div class="form-control-border"></div>
                       <i class="form-control-icon fa fa-tag"></i>
-                      <div class="help-block with-errors"></div>
                     </div>
 
                     <div class="form-group">
-                      <textarea id="form_message" name="message" class="form-control" placeholder="Escribe tu mensaje"
-                        rows="4" required="required" data-error="Por favor, déjame un mensaje."></textarea>
+                      <textarea name="message" class="form-control" rows="4" placeholder="Escribe tu mensaje"
+                        required></textarea>
                       <div class="form-control-border"></div>
                       <i class="form-control-icon fa fa-comment"></i>
-                      <div class="help-block with-errors"></div>
                     </div>
+
+                    <div id="form-status" style="margin-top: 15px; font-weight: bold;"></div>
 
                     <input type="submit" class="button btn-send" value="Enviar mensaje">
                   </div>
@@ -917,6 +912,33 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/jquery.hoverdir.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (response.ok) {
+        status.textContent = "✅ ¡Mensaje enviado con éxito!";
+        status.style.color = "#28a745";
+        form.reset();
+      } else {
+        status.textContent = "❌ Hubo un problema. Intenta de nuevo.";
+        status.style.color = "#dc3545";
+      }
+    });
+  </script>
+
 
 </body>
 
