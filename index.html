@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ossman Mejia Guzmán</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="Sunshine - Responsive vCard Template" />
+  <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Sunshine, portfolio" />
+  <meta name="author" content="lmtheme" />
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/transition-animations.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+  <!-- Loading animation -->
+  <div class="preloader">
+    <div class="preloader-animation">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+    </div>
+  </div>
+  <!-- /Loading animation -->
+
+  <div id="page" class="page">
+    <!-- Header -->
+    <header id="site_header" class="header mobile-menu-hide">
+      <div class="my-photo">
+        <img src="images/my_photo-1.png" alt="image">
+        <div class="mask"></div>
+      </div>
+
+      <div class="site-title-block">
+        <h1 class="site-title">Ossman Mejia Guzmán</h1>
+        <p class="site-description">Innovación Educativa - Análisis de datos</p>
+      </div>
+
+      <!-- Navigation & Social buttons -->
+      <div class="site-nav">
+        <!-- Main menu -->
+        <ul id="nav" class="site-main-menu">
+          <!-- About Me Subpage link -->
+          <li>
+            <a class="pt-trigger" href="#home" data-animation="58"
+              data-goto="1">Home</a><!-- href value = data-id without # of .pt-page. Data-goto is the number of section -->
+          </li>
+          <!-- /About Me Subpage link -->
+          <!-- About Me Subpage link -->
+          <li>
+            <a class="pt-trigger" href="#about_me" data-animation="59" data-goto="2">Sobre mí</a>
+          </li>
+          <!-- /About Me Subpage link -->
+          <li>
+            <a class="pt-trigger" href="#resume" data-animation="60" data-goto="3">Trayectoria</a>
+          </li>
+          <!-- <li>
+            <a class="pt-trigger" href="#portfolio" data-animation="61" data-goto="4">Portafolio</a>
+          </li> -->
+          <li>
+            <a class="pt-trigger" href="#contact" data-animation="59" data-goto="5">Contacto</a>
+          </li>
+        </ul>
+        <!-- /Main menu -->
+
+        <!-- Social buttons -->
+        <ul class="social-links">
+          <li><a class="tip social-button" href="https://www.linkedin.com/in/ossmanmejia/" title="Linkedin"
+              target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
+          <li><a class="tip social-button" href="https://github.com/ossmanmejia/" title="GitHub"><i
+                class="fa fa-github"></i></a></li>
+        </ul>
+        <!-- /Social buttons -->
+      </div>
+      <!-- Navigation & Social buttons -->
+    </header>
+    <!-- /Header -->
+
+    <!-- Mobile Header -->
+    <div class="mobile-header mobile-visible">
+      <div class="mobile-logo-container">
+        <div class="mobile-site-title">Ossman Mejia Guzmán</div>
+      </div>
+
+      <a class="menu-toggle mobile-visible">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- /Mobile Header -->
+
+    <!-- Main Content -->
+    <div id="main" class="site-main">
+      <!-- Page changer wrapper -->
+      <div class="pt-wrapper">
+        <!-- Subpages -->
+        <div class="subpages">
+
+          <!-- Home Subpage -->
+          <section class="pt-page pt-page-1 section-with-bg section-paddings-0"
+            style="background-image: url(images/home_page_bg_1-1.jpg);" data-id="home">
+            <div class="home-page-block-bg">
+              <div class="mask"></div>
+            </div>
+            <div class="home-page-block">
+              <div class="v-align">
+                <h2>Ossman Mejia Guzmán</h2>
+                <div id="rotate" class="text-rotate">
+                  <div>
+                    <p class="home-page-description">Innovación educativa</p>
+                  </div>
+                  <div>
+                    <p class="home-page-description">Análisis de datos</p>
+                  </div>
+                  <div>
+                    <p class="home-page-description">Diseño instruccional</p>
+                  </div>
+                  <div>
+                    <p class="home-page-description">Tecnologías emergentes</p>
+                  </div>
+                  <div>
+                    <p class="home-page-description">STEM+ y pensamiento computacional</p>
+                  </div>
+                  <div>
+                    <p class="home-page-description">Formación docente</p>
+                  </div>
+                  <div>
+                    <p class="home-page-description">Gestión de proyectos educativos</p>
+                  </div>
+                  <div>
+                    <p class="home-page-description">Visualización de datos</p>
+                  </div>
+                  <div>
+                    <p class="home-page-description">Transformación digital</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Home Subpage -->
+
+          <!-- About Me Subpage -->
+          <section class="pt-page pt-page-2" data-id="about_me">
+            <div class="section-title-block">
+              <h2 class="section-title">Sobre mí</h2>
+              <h5 class="section-description">Ingeniero, formador y creador de experiencias de aprendizaje</h5>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6 subpage-block">
+                <div class="general-info">
+                  <h3>Ingeniero de software, datos y sociólogo</h3>
+                  <p>Soy ingeniero de software, analista de datos y sociólogo con más de 10 años de experiencia en
+                    educación. He liderado proyectos de innovación que articulan tecnología, pedagogía y transformación
+                    social, promoviendo enfoques como STEM+, robótica y pensamiento computacional.</p>
+                  <p>Trabajo en el diseño de soluciones formativas centradas en el usuario, el análisis de datos y el
+                    fortalecimiento docente. Creo en el poder de la tecnología para transformar la enseñanza con
+                    sentido, equidad y participación.</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-6 subpage-block">
+                <div class="block-title">
+                  <h3>Testimonios</h3>
+                </div>
+                <div class="testimonials owl-carousel">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <div class="testimonial-text">
+                        <p>"Trabajar con Ossman es descubrir nuevas formas de pensar la educación. Siempre tiene una
+                          mirada innovadora, crítica y profundamente humana."</p>
+                      </div>
+                    </div>
+                    <div class="testimonial-credits">
+                      <div class="testimonial-picture">
+                        <img src="images/testimonials/testimonial_photo_1.png" alt="">
+                      </div>
+                      <div class="testimonial-author-info">
+                        <p class="testimonial-author">Camila Ríos</p>
+                        <p class="testimonial-firm">Universidad EAFIT</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <div class="testimonial-text">
+                        <p>"Trabajar con Ossman es descubrir nuevas formas de pensar la educación. Siempre tiene una
+                          mirada innovadora, crítica y profundamente humana."</p>
+                      </div>
+                    </div>
+                    <div class="testimonial-credits">
+                      <div class="testimonial-picture">
+                        <img src="images/testimonials/testimonial_photo_1.png" alt="">
+                      </div>
+                      <div class="testimonial-author-info">
+                        <p class="testimonial-author">Camila Ríos</p>
+                        <p class="testimonial-firm">Universidad EAFIT</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Servicios -->
+            <div class="block-title">
+              <h3>Servicios</h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="service-block">
+                  <div class="service-info">
+                    <img src="images/service/web_design.png" alt="Responsive Design">
+                    <h4>Diseño de experiencias de aprendizaje</h4>
+                    <p>Diseño soluciones formativas centradas en el usuario, combinando pedagogía, tecnología y
+                      narrativas para generar aprendizajes significativos e innovadores.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="service-block">
+                  <div class="service-info">
+                    <img src="images/service/copywrite.png" alt="Copywriter">
+                    <h4>Analítica educativa y visualización</h4>
+                    <p>Transformo datos en conocimiento accionable para la toma de decisiones en proyectos educativos,
+                      mediante dashboards, análisis descriptivo y storytelling con datos.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="service-block">
+                  <div class="service-info">
+                    <img src="images/service/ecommerce.png" alt="E-Commerce">
+                    <h4>Integración de tecnologías educativas</h4>
+                    <p>Acompaño procesos de apropiación de enfoques como STEM+, robótica, IA y gamificación,
+                      fortaleciendo capacidades docentes y fomentando el aprendizaje activo.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="service-block">
+                  <div class="service-info">
+                    <img src="images/service/management.png" alt="Management">
+                    <h4>Gestión de proyectos educativos</h4>
+                    <p>Lidero equipos interdisciplinarios y coordino proyectos de alto impacto en el sector educativo,
+                      con enfoque en innovación, equidad y sostenibilidad.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Clientes -->
+            <div class="block-title">
+              <h3>Clientes</h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 col-md-2 subpage-block">
+                <div class="client_block">
+                  <a href="#" target="_blank"><img src="images/clients/channels-977_logo_MEN.png" alt="MEN"></a>
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-2 subpage-block">
+                <div class="client_block">
+                  <a href="#" target="_blank"><img src="images/clients/logo_EAFIT_negro.svg" alt="EAFIT"></a>
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-2 subpage-block">
+                <div class="client_block">
+                  <a href="#" target="_blank"><img src="images/clients/logo-edumedia.png.webp" alt="Edumedia"></a>
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-2 subpage-block">
+                <div class="client_block">
+                  <a href="#" target="_blank"><img src="images/clients/logo_300.png" alt="CH"></a>
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-2 subpage-block">
+                <div class="client_block">
+                  <a href="#" target="_blank"><img src="images/clients/uni.png" alt="UNIMINUTO"></a>
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-2 subpage-block">
+                <div class="client_block">
+                  <a href="#" target="_blank"><img src="images/clients/cropped-Isa_InterColombia_logo.png"
+                      alt="ISA"></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fun Facts -->
+            <div class="block-title">
+              <h3>Impacto en números</h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="fun-fact">
+                  <h4>+100</h4>
+                  <span>Dashboards<br>diseñados</span>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="fun-fact">
+                  <h4>+20</h4>
+                  <span>Hackathons<br>educativas</span>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="fun-fact">
+                  <h4>+50</h4>
+                  <span>Cursos y rutas<br>formativas diseñadas</span>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="fun-fact">
+                  <h4>+1,000</h4>
+                  <span>Veces que dije:<br>“¡Esto sí es innovación!” 🚀</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of About Me Subpage -->
+
+          <!-- Resume Subpage -->
+          <section class="pt-page pt-page-3" data-id="resume">
+            <div class="section-title-block">
+              <h2 class="section-title">Trayectoria</h2>
+              <h5 class="section-description">Más de 10 años articulando educación, datos e innovación</h5>
+            </div>
+
+            <div class="row">
+              <!-- Educación -->
+              <div class="col-sm-6 col-md-4 subpage-block">
+                <div class="block-title">
+                  <h3>Educación</h3>
+                </div>
+                <div class="timeline">
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">2025</h5>
+                    <h4 class="event-name">Diplomado en NLP y Técnicas Avanzadas de IA Generativa</h4>
+                    <span class="event-description">IU Digital de Antioquia</span>
+                    <p>Formación en procesamiento de lenguaje natural y técnicas de inteligencia artificial generativa
+                      aplicadas a soluciones tecnológicas avanzadas.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">2024</h5>
+                    <h4 class="event-name">Diplomado en Pensamiento Computacional</h4>
+                    <span class="event-description">Universidad EAFIT</span>
+                    <p>Desarrollo del pensamiento algorítmico y lógico como base para la resolución de problemas con
+                      herramientas computacionales.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">2024</h5>
+                    <h4 class="event-name">Diplomado en Innovación, Ciencia y Tecnología Educativa con enfoque STEM+
+                    </h4>
+                    <span class="event-description">Universidad EAFIT</span>
+                    <p>Diseño e implementación de estrategias educativas innovadoras con base en el enfoque STEM+ para
+                      la formación integral.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">2023</h5>
+                    <h4 class="event-name">Ingeniero de Software y Datos</h4>
+                    <span class="event-description">IU Digital de Antioquia</span>
+                    <p>Formación en análisis, modelado, minería y gestión de datos, así como en desarrollo de soluciones
+                      de software orientadas a la innovación tecnológica.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">2023</h5>
+                    <h4 class="event-name">Diplomado en Desarrollo Web</h4>
+                    <span class="event-description">IU Digital de Antioquia</span>
+                    <p>Desarrollo de aplicaciones web modernas aplicando buenas prácticas de diseño, desarrollo frontend
+                      y backend.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">2022</h5>
+                    <h4 class="event-name">Diplomado en Programación Web</h4>
+                    <span class="event-description">IU Digital de Antioquia</span>
+                    <p>Formación en lenguajes y herramientas de programación web orientada a la creación de soluciones
+                      digitales funcionales.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">2015</h5>
+                    <h4 class="event-name">Sociólogo</h4>
+                    <span class="event-description">Universidad de Antioquia</span>
+                    <p>Formación en pensamiento crítico, análisis de problemáticas sociales, acción colectiva y
+                      metodologías de investigación cualitativa.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">2011</h5>
+                    <h4 class="event-name">Diplomado en Estudios Sociales de la Ciencia y Sociedad del Conocimiento</h4>
+                    <span class="event-description">Universidad de Antioquia</span>
+                    <p>Análisis crítico de las relaciones entre ciencia, tecnología y sociedad desde una perspectiva
+                      interdisciplinar.</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <!-- Experiencia -->
+              <div class="col-sm-6 col-md-4 subpage-block">
+                <div class="block-title">
+                  <h3>Experiencia</h3>
+                </div>
+                <div class="timeline">
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">Ene 2025 - Actualidad</h5>
+                    <h4 class="event-name">Líder de formación</h4>
+                    <span class="event-description">Universidad de los Niños EAFIT</span>
+                    <p>Diseño de estrategias formativas, acompañamiento a formadores y desarrollo de contenidos
+                      educativos con enfoque STEM+.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">Ago 2024 - Dic 2024</h5>
+                    <h4 class="event-name">Líder de contenidos y plataformas e-learning</h4>
+                    <span class="event-description">EduMedia</span>
+                    <p>Diseño de cursos virtuales, rutas de aprendizaje y mejora de contenidos con base en analítica de
+                      aprendizaje.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">Ene 2024 - Dic 2024</h5>
+                    <h4 class="event-name">Coordinador regional</h4>
+                    <span class="event-description">Universidad EAFIT</span>
+                    <p>Acompañamiento territorial a instituciones en proyectos CTeI. Diseño de rutas formativas y
+                      documentación técnica.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">Abr 2024 - May 2024</h5>
+                    <h4 class="event-name">Consultor en innovación educativa</h4>
+                    <span class="event-description">Rotorr - Motor de Innovación</span>
+                    <p>Revisión de contenidos, análisis de datos y elaboración de informes técnicos para mejora de
+                      estrategias educativas.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">Jul 2023 - Dic 2023</h5>
+                    <h4 class="event-name">Líder componente pedagógico</h4>
+                    <span class="event-description">Proyecto Aprendamos Siempre</span>
+                    <p>Diseño de modelos híbridos de aprendizaje y coordinación de rutas y recursos pedagógicos en
+                      Bogotá.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">Ene 2023 - Jun 2023</h5>
+                    <h4 class="event-name">Consultor en formación docente y tecnología educativa</h4>
+                    <span class="event-description">Proyecto KreoTIC - Universidad EAFIT</span>
+                    <p>Formación en tecnologías emergentes y acompañamiento a experiencias pedagógicas en nodos
+                      educativos.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">Ene 2022 - Dic 2022</h5>
+                    <h4 class="event-name">Líder de parametrización</h4>
+                    <span class="event-description">Imaginar Futuros</span>
+                    <p>Acompañamiento a escuelas en Evaluar para Avanzar. Diseño de recursos y sistematización de
+                      experiencias.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">Abr 2020 - Dic 2021</h5>
+                    <h4 class="event-name">Consultor de innovación</h4>
+                    <span class="event-description">Universidad EAFIT</span>
+                    <p>Acompañamiento remoto a secretarías de educación. Apoyo en formulación de planes de innovación,
+                      diseño de recursos y monitoreo territorial.</p>
+                  </div>
+
+                  <div class="timeline-event te-primary">
+                    <h5 class="event-date">Ago 2016 - Abr 2020</h5>
+                    <h4 class="event-name">Gestor de innovación</h4>
+                    <span class="event-description">Universidad EAFIT</span>
+                    <p>Liderazgo pedagógico en instituciones de Itagüí. Formación docente en TIC, gestión de
+                      infraestructura y sistematización de experiencias.</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+              <!-- Habilidades -->
+              <div class="col-sm-6 col-md-4 subpage-block">
+                <div class="block-title">
+                  <h3>Habilidades en diseño educativo</h3>
+                </div>
+                <div class="skills-info">
+                  <h4>Diseño instruccional centrado en el aprendizaje (10)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-10"></div>
+                  </div>
+
+                  <h4>Diseño de experiencias formativas híbridas (9)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-9"></div>
+                  </div>
+
+                  <h4>Curaduría y creación de contenidos educativos (9)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-9"></div>
+                  </div>
+
+                  <h4>Gestión de proyectos formativos (8)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-8"></div>
+                  </div>
+                </div>
+
+                <div class="block-title">
+                  <h3>Habilidades técnicas</h3>
+                </div>
+                <div class="skills-info">
+                  <h4>HTML5 / CSS3 (8)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-8"></div>
+                  </div>
+
+                  <h4>WordPress / Elementor (9)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-9"></div>
+                  </div>
+
+                  <h4>Python (pandas, matplotlib, streamlit) (9)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-9"></div>
+                  </div>
+
+                  <h4>SQL / Databricks (8)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-8"></div>
+                  </div>
+
+                  <h4>Moodle (10)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-10"></div>
+                  </div>
+                </div>
+
+                <div class="block-title">
+                  <h3>Habilidades en análisis y visualización</h3>
+                </div>
+                <div class="skills-info">
+                  <h4>Power BI (9)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-9"></div>
+                  </div>
+
+                  <h4>Storytelling con datos (10)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-10"></div>
+                  </div>
+
+                  <h4>Visualización de datos y dashboards (9)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-9"></div>
+                  </div>
+
+                  <h4>Sistematización de experiencias educativas (8)</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-8"></div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- Botón descarga CV -->
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+                  <div class="download-cv-block">
+                    <a class="button" target="_blank" href="#">Descargar hoja de vida</a>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+
+
+          <!-- Portfolio Subpage -->
+          <section class="pt-page pt-page-4" data-id="portfolio">
+            <div class="section-title-block">
+              <h2 class="section-title">Portfolio</h2>
+              <h5 class="section-description">My Best Works</h5>
+            </div>
+
+            <!-- Portfolio Content -->
+            <div class="portfolio-content">
+
+              <!-- Portfolio filter -->
+              <ul id="portfolio_filters" class="portfolio-filters">
+                <li class="active">
+                  <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+                </li>
+                <li>
+                  <a class="filter btn btn-sm btn-link" data-group="media">Media</a>
+                </li>
+                <li>
+                  <a class="filter btn btn-sm btn-link" data-group="illustration">Illustration</a>
+                </li>
+                <li>
+                  <a class="filter btn btn-sm btn-link" data-group="video">Video</a>
+                </li>
+              </ul>
+              <!-- End of Portfolio filter -->
+
+              <!-- Portfolio Grid -->
+              <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+
+                <!-- Portfolio Item 1 -->
+                <figure class="item" data-groups='["all", "media"]'>
+                  <a class="ajax-page-load" href="portfolio-1.html">
+                    <img src="images/portfolio/1.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Media</small>
+                      <i class="fa fa-file-text-o"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 1 -->
+
+                <!-- Portfolio Item 2 -->
+                <figure class="item" data-groups='["all", "video"]'>
+                  <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex"
+                    class="lightbox mfp-iframe">
+                    <img src="images/portfolio/2.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Video</small>
+                      <i class="fa fa-video-camera"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 2 -->
+
+                <!-- Portfolio Item 3 -->
+                <figure class="item" data-groups='["all","illustration"]'>
+                  <a href="images/portfolio/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+                    <img src="images/portfolio/3.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Illustration</small>
+                      <i class="fa fa-image"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 3 -->
+
+                <!-- Portfolio Item 4 -->
+                <figure class="item" data-groups='["all", "media"]'>
+                  <a class="ajax-page-load" href="portfolio-1.html">
+                    <img src="images/portfolio/4.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Media</small>
+                      <i class="fa fa-file-text-o"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 4 -->
+
+                <!-- Portfolio Item 5 -->
+                <figure class="item" data-groups='["all", "illustration"]'>
+                  <a href="images/portfolio/5.jpg" class="lightbox" title="Aliquam Condimentum Magna Rhoncus">
+                    <img src="images/portfolio/5.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Illustration</small>
+                      <i class="fa fa-image"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 5 -->
+
+                <!-- Portfolio Item 6 -->
+                <figure class="item" data-groups='["all", "media"]'>
+                  <a class="ajax-page-load" href="portfolio-1.html">
+                    <img src="images/portfolio/6.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Media</small>
+                      <i class="fa fa-file-text-o"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 6 -->
+
+                <!-- Portfolio Item 7 -->
+                <figure class="item" data-groups='["all", "video"]'>
+                  <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Nulla Facilisi"
+                    class="lightbox mfp-iframe">
+                    <img src="images/portfolio/7.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Video</small>
+                      <i class="fa fa-video-camera"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 7 -->
+
+                <!-- Portfolio Item 8 -->
+                <figure class="item" data-groups='["all",  "media"]'>
+                  <a class="ajax-page-load" href="portfolio-1.html">
+                    <img src="images/portfolio/8.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Media</small>
+                      <i class="fa fa-file-text-o"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 8 -->
+
+                <!-- Portfolio Item 9 -->
+                <figure class="item" data-groups='["all","illustration"]'>
+                  <a href="images/portfolio/9.jpg" class="lightbox" title="Mauris Neque Dolor">
+                    <img src="images/portfolio/9.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Illustration</small>
+                      <i class="fa fa-image"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 9 -->
+
+                <!-- Portfolio Item 10 -->
+                <figure class="item" data-groups='["all", "video"]'>
+                  <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Donec Lectus Arcu"
+                    class="lightbox mfp-iframe">
+                    <img src="images/portfolio/10.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Video</small>
+                      <i class="fa fa-video-camera"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 10 -->
+
+                <!-- Portfolio Item 11 -->
+                <figure class="item" data-groups='["all","illustration"]'>
+                  <a href="images/portfolio/11.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+                    <img src="images/portfolio/11.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Illustration</small>
+                      <i class="fa fa-image"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 11 -->
+
+                <!-- Portfolio Item 12 -->
+                <figure class="item" data-groups='["all","media"]'>
+                  <a class="ajax-page-load" href="portfolio-1.html">
+                    <img src="images/portfolio/12.jpg" alt="">
+                    <div>
+                      <h5 class="name">Project Name</h5>
+                      <small>Media</small>
+                      <i class="fa fa-file-text-o"></i>
+                    </div>
+                  </a>
+                </figure>
+                <!-- /Portfolio Item 12 -->
+              </div>
+              <!-- /Portfolio Grid -->
+
+            </div>
+            <!-- /Portfolio Content -->
+
+          </section>
+          <!-- /Portfolio Subpage -->
+
+          <!-- Contact Subpage -->
+          <section class="pt-page pt-page-5" data-id="contact">
+            <div class="section-title-block">
+              <h2 class="section-title">Contacto</h2>
+              <h5 class="section-description">¿Hablamos?</h5>
+            </div>
+
+            <div class="row">
+              <!-- Información de contacto -->
+              <div class="col-sm-6 col-md-6 subpage-block">
+                <div class="block-title">
+                  <h3>Información de contacto</h3>
+                </div>
+                <p>Si tienes una idea, proyecto o propuesta educativa, estaré encantado de conversar y explorar
+                  posibilidades de colaboración.</p>
+
+                <div class="contact-info-block">
+                  <div class="ci-icon">
+                    <i class="pe-7s-icon pe-7s-map-marker"></i>
+                  </div>
+                  <div class="ci-text">
+                    <h5>Medellín, Colombia</h5>
+                  </div>
+                </div>
+
+                <div class="contact-info-block">
+                  <div class="ci-icon">
+                    <i class="pe-7s-icon pe-7s-mail"></i>
+                  </div>
+                  <div class="ci-text">
+                    <h5>ossmanmejia@gmail.com</h5>
+                  </div>
+                </div>
+
+                <div class="contact-info-block">
+                  <div class="ci-icon">
+                    <i class="pe-7s-icon pe-7s-call"></i>
+                  </div>
+                  <div class="ci-text">
+                    <h5>+57 319 246 4923</h5>
+                  </div>
+                </div>
+
+                <div class="contact-info-block">
+                  <div class="ci-icon">
+                    <i class="pe-7s-icon pe-7s-check"></i>
+                  </div>
+                  <div class="ci-text">
+                    <h5>Disponible para colaboraciones</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Formulario de contacto -->
+              <div class="col-sm-6 col-md-6 subpage-block">
+                <div class="block-title">
+                  <h3>Formulario de contacto</h3>
+                </div>
+                <form id="contact-form" method="POST" action="https://formspree.io/f/xrgvpdla">
+                  <div class="controls">
+                    <div class="form-group">
+                      <input id="form_name" type="text" name="name" class="form-control"
+                        placeholder="Tu nombre completo" required="required" data-error="Por favor, ingresa tu nombre.">
+                      <div class="form-control-border"></div>
+                      <i class="form-control-icon fa fa-user"></i>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <input id="form_email" type="email" name="email" class="form-control"
+                        placeholder="Tu correo electrónico" required="required"
+                        data-error="Por favor, ingresa un correo válido.">
+                      <div class="form-control-border"></div>
+                      <i class="form-control-icon fa fa-envelope"></i>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Asunto"
+                        required="required" data-error="Por favor, indica el asunto.">
+                      <div class="form-control-border"></div>
+                      <i class="form-control-icon fa fa-tag"></i>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Escribe tu mensaje"
+                        rows="4" required="required" data-error="Por favor, déjame un mensaje."></textarea>
+                      <div class="form-control-border"></div>
+                      <i class="form-control-icon fa fa-comment"></i>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <input type="submit" class="button btn-send" value="Enviar mensaje">
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </section>
+          <!-- End Contact Subpage -->
+
+
+        </div>
+      </div>
+      <!-- /Page changer wrapper -->
+    </div>
+    <!-- /Main Content -->
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/page-transition.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/validator.js"></script>
+  <script src="js/jquery.shuffle.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.hoverdir.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
