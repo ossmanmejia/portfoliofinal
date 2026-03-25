@@ -2,6 +2,102 @@
 <html lang="es" class="no-js">
 
 <head>
+  <style>
+    .home-animated-bg {
+      background: linear-gradient(rgb(47, 192, 209), rgb(139, 92, 246));
+      overflow: hidden;
+      position: relative;
+    }
+
+    .animated-home-bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .animated-home-bg .mask {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg,
+          rgba(15, 23, 42, 0.78),
+          rgba(17, 24, 39, 0.72));
+      z-index: 2;
+    }
+
+    .animated-shape {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(10px);
+      opacity: 0.22;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      z-index: 1;
+    }
+
+    .shape-1 {
+      width: 340px;
+      height: 340px;
+      background: #00bcd4;
+      top: -60px;
+      left: -80px;
+      animation: floatOne 10s infinite;
+    }
+
+    .shape-2 {
+      width: 260px;
+      height: 260px;
+      background: #8b5cf6;
+      bottom: -40px;
+      right: 8%;
+      animation: floatTwo 12s infinite;
+    }
+
+    .shape-3 {
+      width: 180px;
+      height: 180px;
+      background: #38bdf8;
+      top: 38%;
+      left: 58%;
+      animation: floatThree 9s infinite;
+    }
+
+    .home-page-block {
+      position: relative;
+      z-index: 3;
+    }
+
+    @keyframes floatOne {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(50px, 30px) scale(1.12);
+      }
+    }
+
+    @keyframes floatTwo {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(-40px, -25px) scale(1.08);
+      }
+    }
+
+    @keyframes floatThree {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(20px, -35px) scale(1.15);
+      }
+    }
+  </style>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ossman Mejia Guzmán</title>
@@ -109,9 +205,11 @@
         <div class="subpages">
 
           <!-- Home Subpage -->
-          <section class="pt-page pt-page-1 section-with-bg section-paddings-0"
-            style="background-image: url(images/home_page_bg_1-1.jpg);" data-id="home">
-            <div class="home-page-block-bg">
+          <section class="pt-page pt-page-1 section-with-bg section-paddings-0 home-animated-bg" data-id="home">
+            <div class="home-page-block-bg animated-home-bg">
+              <div class="animated-shape shape-1"></div>
+              <div class="animated-shape shape-2"></div>
+              <div class="animated-shape shape-3"></div>
               <div class="mask"></div>
             </div>
             <div class="home-page-block">
